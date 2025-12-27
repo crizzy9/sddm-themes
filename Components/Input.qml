@@ -14,6 +14,9 @@ Column {
 
     property ComboBox exposeSession: sessionSelect.exposeSession
     property bool failed
+    property int inputWidthDiff: config.InputWidthDiff == "" ? 0 : config.InputWidthDiff
+
+    topPadding: config.InputPaddingTop == "" ? 0 : config.InputPaddingTop
 
     Item {
         id: errorMessageField
@@ -68,7 +71,7 @@ Column {
         id: usernameField
 
         height: root.font.pointSize * 4.5
-        width: parent.width / 2
+        width: parent.width / 2 + inputWidthDiff
         anchors.horizontalCenter: parent.horizontalCenter
 
         ComboBox {
@@ -266,7 +269,7 @@ Column {
         id: passwordField
 
         height: root.font.pointSize * 4.5
-        width: parent.width / 2
+        width: parent.width / 2 + inputWidthDiff
         anchors.horizontalCenter: parent.horizontalCenter
         
         Button {
@@ -403,7 +406,7 @@ Column {
         // important
         // try 4 or 9 ...
         height: root.font.pointSize * 9
-        width: parent.width / 2
+        width: parent.width / 2 + inputWidthDiff
         anchors.horizontalCenter: parent.horizontalCenter
 
         visible: config.HideLoginButton == "true" ? false : true

@@ -1,10 +1,10 @@
-# sddm-astronaut-theme
+# sddm-themes
 
-![Stars](https://img.shields.io/github/stars/keyitdev/sddm-astronaut-theme?color=dd864a&labelColor=1b1b25&style=for-the-badge)
-![Forks](https://img.shields.io/github/forks/keyitdev/sddm-astronaut-theme?color=bf616a&labelColor=1b1b25&style=for-the-badge)
-[![Ko-fi](https://img.shields.io/badge/support_me_on_ko--fi-F16061?style=for-the-badge&logo=kofi&logoColor=f5f5f5)](https://ko-fi.com/keyitdev)
+![Stars](https://img.shields.io/github/stars/crizzy9/sddm-themes?color=dd864a&labelColor=1b1b25&style=for-the-badge)
+![Forks](https://img.shields.io/github/forks/crizzy9/sddm-themes?color=bf616a&labelColor=1b1b25&style=for-the-badge)
+[![Ko-fi](https://img.shields.io/badge/support_me_on_ko--fi-F16061?style=for-the-badge&logo=kofi&logoColor=f5f5f5)](https://ko-fi.com/crizzy9)
 
-[sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme) is a series of themes for the [SDDM](https://github.com/sddm/sddm/) display manager made by **[Keyitdev](https://github.com/Keyitdev)**.
+[sddm-themes](https://github.com/crizzy9/sddm-theme) is a series of themes for the [SDDM](https://github.com/sddm/sddm/) display manager made by **[crizzy9](https://github.com/crizzy9)**.
 
 It's written using the latest version of Qt, which is **Qt6**. Its key features include **virtual keyboard support** and an **installation script**. This theme also support **animated wallpapers**. You can easily change its appearance by choosing another of the ten pre-made themes or creating your own. Each of these themes was created by modifying just one file - **[config](./Themes/astronaut.conf)**.
 
@@ -108,6 +108,11 @@ You can preview the set theme without logging out by runnning:
 sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/sddm-astronaut-theme/
 ```
 > Note that depending on the system configuration, the preview may differ slightly from the actual login screen.
+
+You can preview the theme directly from this repository:
+```sh
+sddm-greeter-qt6 --test-mode --theme .
+```
 
 ## Sources
 

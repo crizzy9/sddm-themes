@@ -11,6 +11,7 @@ Column {
 
     width: parent.width / 2
     spacing: 0
+    topPadding: config.ClockPaddingTop == "" ? 0 : config.ClockPaddingTop
 
     Label {
         id:headerTextLabel
